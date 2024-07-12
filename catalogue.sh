@@ -14,4 +14,4 @@ systemctl daemon-reload
 systemctl enable catalogue
 systemctl start catalogue
 dnf install mongodb-mongosh -y
-mongosh --host MONGODB-SERVER-IPADDRESS </app/db/master-data.js
+mongosh --host mongo.dev.alekhyab96.online </app/db/master-data.js
