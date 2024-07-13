@@ -14,7 +14,7 @@ PRINT install nginx
 dnf install nginx -y &>>$LOG_FILE
 STAT $?
 
-PRINT copy nginx conf file
+PRINT copy nginx config file
 cp nginx.conf /etc/nginx/nginx.conf &>>$LOG_FILE
 STAT $?
 
