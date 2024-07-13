@@ -4,7 +4,9 @@ rm -f $LOG_FILE
 PRINT() {
   echo &>>$LOG_FILE
   echo &>>$LOG_FILE
-  echo" ######################## $* ############################" &>>$LOG_FILE
+  echo " ######################## $* ############################" &>>$LOG_FILE
+  echo
+  echo "Refer the log file for more information : File path : ${LOG_FILE}"
   echo $*
 }
 
