@@ -44,7 +44,7 @@ nodejs() {
 
   PRINT Enable nodejs 20 Module
   dnf module enable nodejs:20 -y &>>$LOG_FILE
- STAT $?
+  STAT $?
 
   PRINT Install nodejs
   dnf install nodejs -y &>>$LOG_FILE
