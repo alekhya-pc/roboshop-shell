@@ -1,4 +1,4 @@
-
+source common.sh
 PRINT Disable redis default
 dnf module disable redis -y &>>$LOG_FILE
 STAT $?
