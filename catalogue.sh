@@ -1,5 +1,6 @@
 source common.sh
 component=catalogue
+app_path=/app
 nodejs
 echo Install Mongodb Client
 dnf install mongodb-mongosh -y &>>$LOG_FILE
