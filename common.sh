@@ -108,6 +108,7 @@ SCHEMA_SETUP() {
    PRINT Install Mongodb Client
    dnf install mongodb-mongosh -y &>>$LOG_FILE
    STAT $?
+
    PRINT Load Master Data
    mongosh --host mongo.dev.alekhyab96.online </app/db/master-data.js &>>$LOG_FILE
    STAT $?
