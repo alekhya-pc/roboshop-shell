@@ -71,13 +71,13 @@ nodejs() {
   dnf install nodejs -y &>>$LOG_FILE
   STAT $?
 
+  SCHEMA_SETUP
+
   APP_PREREQ
 
   PRINT download nodejs Dependancies
   npm install &>>$LOG_FILE
   STAT $?
-
-  SCHEMA_SETUP
 
   SYSTEMD_SETUP
 }
