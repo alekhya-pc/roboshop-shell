@@ -1,6 +1,6 @@
 source common.sh
 component=catalogue
 app_path=/app
-schema_setup=mongo
+schema_setup=mongo.repo
 SCHEMA_SETUP
 nodejs
