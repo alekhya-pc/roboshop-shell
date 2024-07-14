@@ -34,6 +34,7 @@ APP_PREREQ() {
 
   PRINT Create APP Directory
   mkdir ${app_path} &>>$LOG_FILE
+  STAT $?
 
   PRINT Download Application content
   curl -o /tmp/${component}.zip https://roboshop-artifacts.s3.amazonaws.com/${component}-v3.zip &>>$LOG_FILE
