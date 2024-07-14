@@ -9,7 +9,7 @@ STAT $?
 
 APP_PREREQ
 
-PRINT install requirements &>>$LOG_FILE
+PRINT install requirements
 pip3 install -r requirements.txt &>>$LOG_FILE
 STAT $?
 
