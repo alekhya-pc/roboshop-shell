@@ -15,7 +15,7 @@ dnf install nginx -y &>>$LOG_FILE
 STAT $?
 
 PRINT copy nginx config file
-cp frontend.service /etc/nginx/nginx.conf &>>$LOG_FILE
+cp nginix.conf /etc/nginx/nginx.conf &>>$LOG_FILE
 STAT $?
 
 APP_PREREQ
